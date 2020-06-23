@@ -29,7 +29,7 @@
         <app-rating [rating]="course.rating"></app-rating>
       </td>
       <td>{{ course.release | date: 'dd/MM/yyyy' }}</td>
-      <td></td>
+      <td><a [routerLink]="['/courses/info', course.id]" class="btn btn-primary">Info</a></td>
     </tr>
   </tbody>
 </table>
