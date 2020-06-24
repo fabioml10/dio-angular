@@ -4,17 +4,17 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { Navbar } from './navbar/navbar.component';
 import { Error404Component } from './404/404.component';
 import { CourseModule } from './courses/course.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Navbar,
     Error404Component
   ],
   imports: [
+    CoreModule,
     BrowserModule,
     HttpClientModule,
     CourseModule,
